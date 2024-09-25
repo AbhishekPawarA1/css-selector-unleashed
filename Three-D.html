@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            gap: 5px;
+        }
+        .main-box > div {
+            border: 1px solid black;
+            width: 100px;
+            height:100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .zoom:hover {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    </style>
+    <title>3rd-box-3D</title>
+</head>
+<body>
+    <div class="main-box">
+         <div>1</div>
+         <div>2</div>
+         <div class="zoom">3</div>
+         <div>4</div>
+         <div>5</div>
+    </div>
+</body>
+</html>
