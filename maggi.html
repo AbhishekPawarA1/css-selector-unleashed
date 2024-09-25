@@ -7,19 +7,22 @@
         .main-box {
             width: 100%;
             height: 800px;
-            border: 1px solid black;
             display: flex;
+            justify-content: space-between;
+            
         }
         .nav-box {
-            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
             width: 130px;
             display: flex;
             flex-direction: column;
-            height: 600px;
+            height: 550px;
+            justify-content: space-evenly;
         }
         .logo {
             width: 150px;
             margin-left: -10px;
+            margin-bottom: 30px;
         }
         nav {
             display: flex;
@@ -42,6 +45,11 @@
             text-decoration: none;
             color: black;
             padding-left: 30px;
+            font-weight: bold;
+        }
+        .body {
+            box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+            padding: 120px 120px;
         }
     </style>
     <title>Maggi</title>
@@ -61,6 +69,24 @@
                     </ul>
                 </nav>
             </div>
+            <div style="display: flex;">
+            <div class="body">
+                <div>
+                    <h1 style="font-size: 40px;color: #333333;">My Maggi Welcome Back!</h1>
+                    <p style="margin-top: 50px;">E-Mail</p>
+                    <input style="width: 300px;height: 40px;margin-top: -10px;padding-left: 10px;font-size: 15px;" placeholder="Enter your E-mail Address Here"/>
+                    <p style="margin-top:10px;">Password</p>
+                    <input style="width: 300px;height: 40px;margin-top: -10px;padding-left: 10px;font-size: 15px;" placeholder="Enter your Password"/>
+                    <button style="width: 94%; height: 30px; margin-top: 20px;margin-left: ; margin-bottom: 10px;">Login</button>
+                    <br>
+                    <a  style="margin-left: 30%;" href="#">Forget Password</a>
+                </div>
+            </div>
+            <div class="body">
+                <h1 style="font-size: 36px;">Not Registered Yet?</h1>
+                <button style="width: 94%; height: 30px; margin-top: 20px;margin-left: ; margin-bottom: 10px; background-color: black;color: white;font-weight: bold;">Register</button>
+            </div>
+        </div>
         </div>
     </main>
 </body>
